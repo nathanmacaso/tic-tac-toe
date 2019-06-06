@@ -2,32 +2,100 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.square-0 {
+  border-color: red;
+  border-style: solid;
+  border-width: 0px 3px 3px 0px;
+  width: 200px;
+  height: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.square-1 {
+  border-bottom: 3px solid red;
+  width: 200px;
+  height: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.square-2 {
+  border-color: red;
+  border-style: solid;
+  border-width: 0px 0px 3px 3px;
+  width: 200px;
+  height: 200px; 
+}
+
+.square-3 {
+  border-color: red;
+  border-style: solid;
+  border-width: 0px 3px 3px 0px;
+  width: 200px;
+  height: 200px; 
+}
+
+.square-4 {
+  border-bottom: 3px solid red;
+  width: 200px;
+  height: 200px;
+}
+
+.square-5 {
+  border-color: red;
+  border-style: solid;
+  border-width: 0px 0px 3px 3px;
+  width: 200px;
+  height: 200px;  
+}
+
+.square-6 {
+  border-color: red;
+  border-style: solid;
+  border-width: 0px 3px 0px 0px;
+  width: 200px;
+  height: 200px; 
+}
+
+.square-7 {
+  width: 200px;
+  height: 200px; 
+}
+
+.square-8 {
+  border-color: red;
+  border-style: solid;
+  border-width: 0px 0px 0px 3px;
+  width: 200px;
+  height: 200px; 
+}
+
+.btn-square {
+  width: 198px;
+  height: 198px; 
+  font-size: 75px;
+  text-align: center;
+  border: none;
+  color: black;
+}
+
+.btn-square:focus {
+  outline: none;
+}
+
+.scoreboard {
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  padding: 20px;
+  width: 300px;
+  height: 100px;
+  background: #e65656;
+  text-align: left;
+  color: #fff;
+  box-shadow: 5px 5px #f9b8b8;
 }
